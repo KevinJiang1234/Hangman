@@ -20,8 +20,10 @@ def intro():
     print("If the executioner is wrong, his life will be lost.")
     print("If you run out of lives, it's game over.")
 
-
-
+# The beginning of the game
+    print("We will give you 26 letters and shuffle them.")
+# Play a round
+    print("We will tell you the number of letters and you need to enter these letters")
 
 # Main Code
 
