@@ -32,3 +32,45 @@ def intro():
 # Main Code
 
 intro()
+
+def playgame():
+    
+    word = "spiderman"
+    guesses = [""]
+    chance = 5
+
+    while True:
+        guess = input()
+        blank = ""
+        if guess in word:
+            guesses.append(guess)
+        else:
+            chance -=1
+            if chance >=0:
+                print("There are only",chance," chances to guess wrong")
+                print("Pleace try again")
+                continue
+            else:
+                print("You don't have any chance left")
+                print("Game over")
+                break
+
+        for letter in word:
+            if letter in guesses:
+                blank += letter
+            else:
+                blank += "_"
+
+        print(blank) 
+    
+        if blank == word:
+            print("Good job")
+            break
+        
+
+play = input("Do you want to play?")
+
+while play == "yes":
+     print("You only have 5 chances to guess wrong, if you guess wrong more than 5 times, the game is over")
+     playgame()
+     paly = input()
