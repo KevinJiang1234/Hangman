@@ -71,6 +71,7 @@ def playgame():
 play = input("Do you want to play?")
 
 while play == "yes":
+     print("The topic is action and fiction film")
      print("You only have 5 chances to guess wrong, if you guess wrong more than 5 times, the game is over")
      playgame()
      paly = input()
